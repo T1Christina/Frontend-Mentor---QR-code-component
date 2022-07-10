@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+body{
+font-family: 'Outfit',
+     sans-serif;
+     min-height: 100vh;
+     background-color:  hsl(212, 45%, 89%);
+     position: relative;
+    }
+
+    .container{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 450px;
+        background: hsl(0, 0%, 100%);
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+
+    .qr{
+       max-width: 420px;
+       display: block;
+       margin:15px;
+       margin-bottom: 0%;
+       border-radius: 15px;
+
+    }
+
+    .text-content{
+        padding: 4%;
+        text-align: center;
+    }
+
+    .title{
+        color: hsl(218, 44%, 22%);
+        font-weight: 700;
+        font-size: 32px;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+
+    .text-content p.subtitle{
+        font-size: 20px;
+        font-weight: 400;
+        color: hsl(212, 9%, 58%);
+        margin-bottom: 25px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .attribution{
+        left: 50%;
+        top: 95%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        display: block;
+        width: 90%;
+        text-align: center;
+    }
+
+    @media only screen and (max-width:425px) {
+        .container{
+            min-width: 89%;
+            
+        }
+
+        .qr{
+            display: block;
+            width: 91%;
+            margin: 14px;
+        }
+
+        .title{
+            font-size: 23px;
+            margin-top: 3%;
+            margin-bottom: 3%;
+        }
+
+        p.subtitle{
+            margin-left: 5% !important;
+            margin-right: 5% !important;
+            padding: 2px;
+            font-size: 16px !important;
+        }
+    
+    }
+
+   @media only screen and (max-width:1407px) {
+        .container{
+            max-width: 24%;
+            max-height: 73%;
+        }
+
+        .qr{
+            display: block;
+            width: 90%;
+            height: auto;
+            margin: 5%;
+            margin-bottom: 3% !important;
+            object-fit: cover;
+        }
+
+        .text-content{
+            margin-top: 0 !important;  
+        }
+
+        .title{
+            font-size: 21px;
+            margin-top: 0% !important; 
+            margin-bottom: 0% !important;
+            margin-left: 3%;
+            margin-right: 3%;
+        }
+
+        p.subtitle{
+            padding: 2px;
+            font-size: 15px !important;
+            margin-left: 5% !important; 
+            margin-right: 5% !important;
+        }
+
+        .attribution{
+            left: 50%;
+            top: 95%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            display: block;
+            text-align: center !important; 
+        }
+    
+    }
